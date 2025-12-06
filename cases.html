@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta property="og:title" content="Jorge Júnior — Home" />
-    <meta property="og:description" content="Meu Portfólio" />
+    <meta property="og:title" content="Jorge Júnior — Cases" />
+    <meta property="og:description" content="Meus cases" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jncjcoder.github.io/site" />
+    <meta
+      property="og:url"
+      content="https://jncjcoder.github.io/site/cases.html"
+    />
     <meta
       property="og:image"
       content="https://jncjcoder.github.io/site/assets/image/preview.png"
     />
     <meta property="og:locale" content="pt_BR" />
-    <meta name="description" content="Meu site, com meus projetos e cases." />
-    <title>Jorge Júnior | Home</title>
+    <meta name="description" content="Veja os meus Cases." />
+    <title>Jorge Júnior | Cases</title>
     <link rel="stylesheet" href="/site/assets/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -84,48 +87,80 @@
       </div>
     </nav>
     <main>
-      <section class="d-flex align-items-center min-vh-100">
+      <section class="flex-grow-1 py-5">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
-              <h1 class="display-3 fw-bold">Jorge Júnior</h1>
-              <p class="fs-4 text-muted lead"><span id="typewriter"></span>|</p>
-              <p class="fs-5 fw-normal text-muted mb-4">
-                Desenvolvo sistemas escaláveis, eficientes e de alto desempenho.
-              </p>
-              <a href="cases.html" class="btn btn-dark btn-lg mb-3">Cases</a>
-              <a href="projects.html" class="btn btn-dark btn-lg mb-3"
-                >Projects</a
-              >
-              <div>
-                <a
-                  href="https://github.com/JNCJcoder"
-                  target="_blank"
-                  class="text-dark fs-4 me-3"
-                  ><i class="bi bi-github"></i> </a
-                ><a
-                  href="https://linkedin.com/in/JNCJcoder"
-                  target="_blank"
-                  class="text-primary fs-4 me-3"
-                  ><i class="bi bi-linkedin"></i> </a
-                ><a
-                  href="mailto:jorgenettocjunior@gmail.com"
-                  class="text-danger fs-4"
-                  ><i class="bi bi-envelope-fill"></i
-                ></a>
+          <h1 class="text-center mb-4">
+            <i class="bi bi-box"></i> Meus Cases <i class="bi bi-box"></i>
+          </h1>
+          <div class="d-flex justify-content-center mb-4 flex-wrap gap-2">
+            <button class="btn btn-outline-dark active" data-filter="all">
+              Todos
+            </button>
+            <button class="btn btn-outline-dark" data-filter="web-dev">
+              Web Development
+            </button>
+            <button class="btn btn-outline-dark" data-filter="mobile">
+              Mobile
+            </button>
+            <button class="btn btn-outline-dark" data-filter="desktop">
+              Desktop
+            </button>
+            <button class="btn btn-outline-dark" data-filter="game-dev">
+              Game Development
+            </button>
+            <button class="btn btn-outline-dark" data-filter="data">
+              Data
+            </button>
+          </div>
+          <div class="row g-4">
+            <div class="col-12 col-md-4 card-listed" data-category="web-dev">
+              <div class="card h-100 shadow-sm p-3 text-center">
+                <img
+                  src="./assets/image/projetos/backend.jpg"
+                  class="card-img-top mb-3"
+                  alt="Banco Interno"
+                />
+                <h5 class="card-title">Banco Interno</h5>
+                <p class="text-muted">
+                  Backend para um banco ficticio, com autenticação, contas e
+                  registro de transações.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-secondary">JavaScript</span>
+                  <span class="badge bg-secondary">TypeScript</span>
+                  <span class="badge bg-secondary">NestJS</span>
+                </div>
+                <a href="case/Banco-Interno.html" class="btn btn-dark mt-auto"
+                  ><i class="bi bi-arrow-right me-2"></i>Ver Case Completo</a
+                >
               </div>
             </div>
-            <div class="col-md-6 order-1 order-md-2 text-center">
-              <img
-                src="./assets/image/avatar.png"
-                class="img-fluid w-75 w-md-100"
-                alt="Avatar Hero"
-              />
+            <div class="col-12 col-md-4 card-listed" data-category="mobile">
+              <div class="card h-100 shadow-sm p-3 text-center">
+                <img
+                  src="./assets/image/cases/Uras-e-Prediais.jpg"
+                  class="card-img-top mb-3"
+                  alt="Uras e Prediais"
+                />
+                <h5 class="card-title">Uras e Prediais</h5>
+                <p class="text-muted">
+                  Aplicativo mobile para técnicos de campo, com informações e
+                  localização de equipamentos da Oi no Rio de Janeiro.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-secondary">JavaScript</span>
+                  <span class="badge bg-secondary">React Native</span>
+                  <span class="badge bg-secondary">Android</span>
+                </div>
+                <a href="case/Uras-e-Prediais.html" class="btn btn-dark mt-auto"
+                  ><i class="bi bi-arrow-right me-2"></i>Ver Case Completo</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <script src="./assets/js/typewriter.js" defer="defer"></script>
+      <script src="./assets/js/cardfilter.js"></script>
     </main>
     <footer class="bg-dark text-light py-4">
       <div class="container text-center">

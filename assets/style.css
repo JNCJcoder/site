@@ -1,0 +1,14 @@
+* {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.mobile-print
+{
+  width: 25% !important;
+}
+
+@media (max-width: 600px) {
+  .mobile-print {
+    width: 80% !important; /* tamanho para celular */
+  }
+}
