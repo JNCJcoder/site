@@ -90,8 +90,8 @@
       <section class="flex-grow-1 py-5 min-vh-100">
         <div class="container">
           <h1 class="text-center mb-5">
-            <i class="bi bi-envelope"></i> Contato
-            <i class="bi bi-envelope"></i>
+            <i class="bi bi-envelope" aria-hidden="true"></i> Contato
+            <i class="bi bi-envelope" aria-hidden="true"></i>
           </h1>
           <div class="row justify-content-center">
             <div class="col-md-6">
@@ -131,7 +131,7 @@
                   class="btn btn-dark w-100"
                   disabled="disabled"
                 >
-                  <i class="bi bi-send"></i> Enviar
+                  <i class="bi bi-send" aria-hidden="true"></i> Enviar
                 </button>
               </form>
               <div
@@ -150,17 +150,23 @@
                 <a
                   href="mailto:jorgenettocjunior@gmail.com"
                   class="text-danger text-center"
-                  ><i class="bi bi-envelope-fill fs-4"></i><br />Email </a
+                  aria-label="Enviar e-mail"
+                  ><i class="bi bi-envelope-fill fs-4" aria-hidden="true"></i
+                  ><br />Email </a
                 ><a
                   href="https://github.com/JNCJcoder"
                   target="_blank"
                   class="text-dark text-center"
-                  ><i class="bi bi-github fs-4"></i><br />GitHub </a
+                  aria-label="Perfil no GitHub"
+                  ><i class="bi bi-github fs-4" aria-hidden="true"></i
+                  ><br />GitHub </a
                 ><a
                   href="https://linkedin.com/in/JNCJcoder"
                   target="_blank"
                   class="text-primary text-center"
-                  ><i class="bi bi-linkedin fs-4"></i><br />LinkedIn</a
+                  aria-label="Perfil no LinkedIn"
+                  ><i class="bi bi-linkedin fs-4" aria-hidden="true"></i
+                  ><br />LinkedIn</a
                 >
               </div>
             </div>
@@ -178,18 +184,18 @@
             href="https://github.com/JNCJcoder"
             target="_blank"
             class="text-light me-3"
-            aria-label="Meu GitHub"
+            aria-label="Perfil no GitHub"
             ><i class="bi bi-github fs-5" aria-hidden="true"></i> </a
           ><a
             href="https://linkedin.com/JNCJcoder"
             target="_blank"
             class="text-primary me-3"
-            aria-label="Meu LinkedIn"
+            aria-label="Perfil no LinkedIn"
             ><i class="bi bi-linkedin fs-5" aria-hidden="true"></i> </a
           ><a
             href="mailto:jorgenettocjunior@gmail.com"
             class="text-danger"
-            aria-label="Meu Email"
+            aria-label="Enviar e-mail"
             ><i class="bi bi-envelope-fill fs-5" aria-hidden="true"></i
           ></a>
         </div>
