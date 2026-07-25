@@ -9,7 +9,9 @@ filterButtons.forEach(button => {
         const filter = button.getAttribute('data-filter');
 
         caseCards.forEach(card => {
-            if (filter === 'all' || card.getAttribute('data-category') === filter)
+            const categories = card.getAttribute('data-category').split(' ');
+
+            if (filter === 'all' || categories.includes(filter))
             {
                 card.style.display = '';
             }
